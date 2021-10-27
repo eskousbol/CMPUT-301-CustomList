@@ -16,6 +16,9 @@ public class CustomListTest {
         list = new CustomList(null, new ArrayList<City>());
     }
 
+    /**
+     * Test that add city works
+     */
     @Test
     public void addCityTest(){
         int listSize = list.getCount();
