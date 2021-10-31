@@ -25,9 +25,13 @@ public class CustomListTest {
 
     @Test
     public void hasCityTest(){
+        //Check it fails if city is not in list
         City newCity = new City("Edmonton", "AB");
         assertEquals(false, list.hasCity(newCity));
+        //Check it passes if city is in list
         list.addCity(newCity);
         assertEquals(true, list.hasCity(newCity));
     }
+
+
 }

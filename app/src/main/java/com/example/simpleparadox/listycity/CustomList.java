@@ -67,14 +67,19 @@ public class CustomList extends ArrayAdapter<City> {
     }
 
     public boolean hasCity(City city){
-        return false;
+        if (cities.indexOf(city) == -1){
+            return false;
+        }
+        else{
+            return true;
+        }
     }
 
     /*
     public void deleteCity(City city){
-
+        return;
     }
-
+    /*
     public Integer countCities(){
 
     }*/
