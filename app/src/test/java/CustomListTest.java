@@ -44,9 +44,9 @@ public class CustomListTest {
 
     @Test
     public void testCountCities(){
-        assertEquals(java.util.Optional.of(0), list.countCities());
+        assertEquals((int) 0, (int)list.countCities());
         City newCity = new City("Edmonton", "AB");
         list.addCity(newCity);
-        assertEquals(java.util.Optional.of(1), list.countCities());
+        assertEquals((int) 1, (int)list.countCities());
     }
 }
